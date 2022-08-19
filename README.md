@@ -1,3 +1,3 @@
-# Random-Number-Generator
+# Random-Password-Generator
 
-Random Number Generator
+Random Password Generator
