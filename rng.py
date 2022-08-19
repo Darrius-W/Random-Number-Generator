@@ -26,7 +26,7 @@ while True:
 
     print('\nYour Generated Password is: ' + generatedPwd)
     
-    genNewPwd = input('\nWould you like generate a new password?(y/n):')
+    genNewPwd = input('\nWould you like to generate a new password?(y/n):')
         
     if genNewPwd == 'y':
         continue
