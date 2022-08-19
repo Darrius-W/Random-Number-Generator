@@ -10,7 +10,14 @@ while True:
     print('Password Generator')
     print('-'*18)
 
-    pwdLength = int(input('\nEnter length for you password: '))
+    try:
+        pwdLength = int(input('\nEnter length for you password(max 100): '))
+        if pwdLength > 100:
+            raise Exception
+    except:
+        print('Enter valid length!\n')
+        continue
+
     generatedPwd = ''
 
     for x in range(pwdLength):
