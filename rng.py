@@ -11,12 +11,13 @@ while True:
     print('-'*18)
 
     try:
-        pwdLength = int(input('\nEnter length for you password(max 100): '))
+        pwdLength = int(input('Enter length for you password(max 100): '))
         if pwdLength > 100:
             raise Exception
     except:
         print('Enter valid length!\n')
         continue
+
 
     generatedPwd = ''
 
@@ -24,8 +25,11 @@ while True:
         generatedPwd += random.choice(chars)
 
     print('\nYour Generated Password is: ' + generatedPwd)
-    genNewPwd = input('\nWould you like generate a new password?(y/n):')
     
-    if genNewPwd == 'n':
+    genNewPwd = input('\nWould you like generate a new password?(y/n):')
+        
+    if genNewPwd == 'y':
+        continue
+    else:
         print('Goodbye')
         break
